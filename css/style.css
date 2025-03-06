@@ -1,56 +1,143 @@
 @import url(variables.css);
 
-* {
+body {
+    background: linear-gradient(45deg, var(--color-1), var(--color-2));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    padding: 0;
+}
+#form__login {
+    background: var(--color-3);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 25vw;
+    height: 55vh;
+}
+.div__title {
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div__title h1 {
+    font-size: 32px;
+    font-family: "Montserrat-Bold";
+    color: var(--color-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 50%;
+}
+.div__title h1::before {
+    content: "";
+    width: 5px;
+    height: 39px;
+    background: var(--color-2);
+    display: inline-block;
+    margin-right: 10px;
+}
+.div__title strong {
+    font-size: 22px;
+    font-family: "Montserrat-SemiBold";
+    color: var(--color-4);
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin: 0;
+    height: 30%;
+}
+.div__title p {
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-5);
+    margin: 0;
+    height: 20%;
+}
+
+.div__input {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    height: 35%;
+    box-sizing: border-box;
+}
+.div__input label {
+    display: block;
+    font-family: "Montserrat-SemiBold";
+    font-size: 14px;
+    color: var(--color-5);
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.div__input input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid var(--color-7);
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+    color: var(--color-4);
+    background: var(--color-3);
     box-sizing: border-box;
 }
 
-#dialog_login {
-    border: none !important;
-    border-radius: 15px;
-    box-shadow: 0 0 0 0, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    padding: 1.6rem;
-    width: 500px;
-    margin: auto;
+.div__input input::placeholder {
+    color: var(--color-6);
 }
 
-.dialog_header {
+.div__button {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
 }
-
-.dialog_header span {
+.div__button input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: var(--color-1);
+    color: var(--color-3);
+    font-weight: bold;
     cursor: pointer;
-}
-
-#form_login {
-    background: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.div_title {
-    background: violet;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 19px;
-}
-
-.div_input {
-    background: blue;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.div_input label {
-    margin-bottom: 5px;
-}
-
-.div_button {
     margin-top: 10px;
+}
+
+.div__button input:hover {
+    background: var(--color-2);
+}
+
+.div__button span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--color-5);
+}
+
+.div__button a {
+    color: var(--color-1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.div__button a:hover {
+    text-decoration: underline;
 }

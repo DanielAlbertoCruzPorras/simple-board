@@ -1,8 +1,8 @@
-import { findDataByForm } from "./formSignIn.js";
+import {findDataByForm} from "./formSignIn.js";
 
-const form_login = document.querySelector("#form_login");
-const dialog_login = document.querySelector("#dialog_login");
-const dialog_login_close = document.querySelector("#dialog_login_close");
+const form__login = document.querySelector("#form__login");
+const dialog__login = document.querySelector("#dialog__login");
+const dialog__login_close = document.querySelector("#dialog__login_close");
 
-form_login.addEventListener("submit", findDataByForm); // Al dar click al botón del formulario se ejecuta la función findDataByForm
-dialog_login_close.addEventListener("click", () => dialog_login.close()); // Al dar click al icono '×' del dialogo lo cierra
+form__login.addEventListener("submit", findDataByForm) // Al dar click al boton de formularion se ejecuta la funcion findDataByForm
+dialog__login_close.addEventListener("click", (e) => dialog__login.close() ) // Al dar click a icono x del dialogo lo cierra 

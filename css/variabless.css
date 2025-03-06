@@ -1,0 +1,27 @@
+:root {
+    --color-1:#FEAF00;  /* background */
+    --color-2: #F8D442; /* background */
+    --color-3:#FFFFFF;  /* SIn Background */
+    --color-4: #000000; /* title */
+    --color-5: #6C6C6C; /* subtitle */
+    --color-6:#CDCDCD;  /* predet. text */ 
+    --color-7: #E5E5E5; /* border */
+    --color-8: #F2EAE1; /* background */
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../storage/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url(../storage/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(../storage/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../storage/fonts/Montserrat-Regular.ttf);
+}

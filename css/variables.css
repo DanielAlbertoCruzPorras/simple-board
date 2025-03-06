@@ -1,3 +1,26 @@
-:root{
-    --color-1:#ededed;
+:root {
+    --color-1:#FEAF00;  /* background */
+    --color-2: #F8D442; /* background */
+    --color-3:#FFFFFF;  /* SIn Background */
+    --color-4: #000000; /* title */
+    --color-5: #6C6C6C; /* subtitle */
+    --color-6:#CDCDCD;  /* predet. text */ 
+    --color-7: #E5E5E5; /* border */
+}
+
+@font-face {
+    font-family: "Avenir-Heavy";
+    src: url(../storage/fonts/AvenirLTStd-Heavy.otf);
+}
+@font-face {
+    font-family: "Avenir-Roman";
+    src: url(../storage/fonts/AvenirLTStd-Roman.otf);
+}
+@font-face {
+    font-family: "Avenir-Heavy";
+    src: url(../storage/fonts/AvenirLTStd-Heavy.otf);
+}
+@font-face {
+    font-family: "Avenir-Roman";
+    src: url(../storage/fonts/AvenirLTStd-Roman.otf);
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="../css/second.css">
+    <script src="../js/dashboard.js" defer type="module"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>CRUD OPERATIONS</h2>
+        <div class="profile">
+            <img src="../storage/img/profile.png" alt="Perfil">
+            <p>Karthi Madesh</p>
+            <span>Admin</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#"><img src="../storage/img/home.png" alt="Home"> Home</a></li>
+                <li><a href="#"><img src="../storage/img/course.png" alt="Course"> Course</a></li>
+                <li><a href="#"><img src="../storage/img/students.png" alt="Students"> Students</a></li>
+                <li><a href="#"><img src="../storage/img/payment.png" alt="Payment"> Payment</a></li>
+                <li><a href="#"><img src="../storage/img/report.png" alt="Report"> Report</a></li>
+                <li><a href="#"><img src="../storage/img/settings.png" alt="Settings"> Settings</a></li>
+            </ul>
+        </nav>
+        <button class="logout">Logout <img src="../storage/img/logout.png" alt="Logout"></button>
+    </aside>
+    <section class="right">
+        <!-- Header -->
+        <header class="content">
+            <input type="text" placeholder="Search...">
+        </header>
+
+        <!-- Main -->
+        <main class="main-content">     <!-- Contenido principal irá aquí -->
+            <section class="dashboard">
+                <div id="students" class="div__container">
+                    <div>
+                        <img src="../storage/img/graduation-cap.png">
+                        <span>Students</span>
+                    </div>
+                    <strong>243</strong>
+                </div>
+                <div id="course" class="div__container">
+                    <div>
+                        <img src="../storage/img/bookmark1.png">
+                        <span>Course</span>
+                    </div>
+                    <strong>13</strong>
+                </div>
+                <div id="payment" class="div__container">
+                    <div>
+                        <img src="../storage/img/usd.png">
+                        <span>Payments</span>
+                    </div>
+                    <strong data-format="$">556,000</strong>
+                </div>
+                <div id="user" class="div__container">
+                    <div>
+                        <img src="../storage/img/users.png">
+                        <span>Users</span>
+                    </div>
+                    <strong>3</strong>
+                </div>
+            </section>
+        </main>
+    </section>
+</body>
+</html>

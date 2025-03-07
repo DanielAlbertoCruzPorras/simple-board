@@ -85,6 +85,7 @@ body {
     padding: 0;
     border-radius: 5px;
     transition: background 0.2s;
+    overflow-x: hidden;
 }
 .sidebar nav ul li a {
     display: flex;
